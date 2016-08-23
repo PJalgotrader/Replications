@@ -147,7 +147,7 @@ $(document).ready(function () {
 <li><strong>H</strong> is the overlapping horizon ex. 20 or 10 and etc</li>
 <li><strong>OOS_est_period</strong> is the out of sample estimation periods is the number of periods used for out of sample estimations</li>
 </ul>
-<p>Let’s start with loading some data, you can find the original data from Amit Goyal’s website: <a href="http://www.hec.unil.ch/agoyal/" class="uri">http://www.hec.unil.ch/agoyal/</a></p>
+<p>Let’s start with loading some data, you can find the original data from Amit Goyal’s <a href="http://www.hec.unil.ch/agoyal/">website</a>.</p>
 <p>In this replication however, I am going to modify the original excel file and add 5 more columns to it. Namely ep, dp, dy, de, ERP and SP500 and save it as .csv file with this new name: “modified_data.csv”. Save this csv file in our working directory we are ready to use the following code and replicate the graphs. You can find this modified_data.csv file <a href="modified_data.csv">here</a> .</p>
 <pre class="r"><code>Data_source  &lt;- &quot;./modified_data.csv&quot;                                    
 A_df         &lt;- tbl_df(read.table(Data_source, sep = &quot;,&quot;, header = TRUE) )</code></pre>
