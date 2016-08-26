@@ -295,7 +295,7 @@ A_df         &lt;- tbl_df(read.table(Data_source, sep = &quot;,&quot;, header = 
         
         
         # Plotting H-Horizon returns vs predictors (replicating Lettau Ludvigson 2001 graphs)
-        if (RHS==&quot;dsr_demean&quot; | RHS==&quot;f_demean&quot; | RHS==&quot;MRHSVGDP&quot; | RHS==&quot;ik&quot;) {teta&lt;- -1} else {teta&lt;- 1} # I flipt the curve for predictors with negative risk premium    
+        if (RHS==&quot;dsr_demean&quot; | RHS==&quot;f_demean&quot; | RHS==&quot;MRHSVGDP&quot; ) {teta&lt;- -1} else {teta&lt;- 1} # I flipt the curve for predictors with negative risk premium    
         # teta is used to flip the graphs for predictors with negative coef
         
         df1   &lt;- data.frame( y= teta*(A[,RHS]  - mean(A[,RHS]))/sqrt(var(A[,RHS])),
