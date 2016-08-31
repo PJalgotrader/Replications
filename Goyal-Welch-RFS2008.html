@@ -183,7 +183,7 @@ A_df         &lt;- tbl_df(read.table(Data_source, sep = &quot;,&quot;, header = 
         
         
         IS_CSSE        &lt;- data.frame(year=(start_date+1) :(end_date-H+1), stat=rep(&quot;IS_CSSE&quot;,T-H))       
-        # this is IS cumulative SSE (loosing 1 observation)
+        # this is IS cumulative SSE 
         
         OOS_CSSE       &lt;- data.frame(year=(start_date+ OOS_est_period-1) :(end_date-H+1),
                                      stat=rep(&quot;OOS_CSSE&quot;,T-H+2- OOS_est_period ))      
