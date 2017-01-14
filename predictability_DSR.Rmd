@@ -1,0 +1,8 @@
+---
+title: "Predictability using Financial Obligations Ratio"
+author: "Pedram Jahangiry"
+date: "January 14, 2017"
+output: html_document
+---
+
+working on it...
